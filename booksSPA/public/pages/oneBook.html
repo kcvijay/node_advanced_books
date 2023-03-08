@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get A Book</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="heading">
+        <h1>Get A Book</h1>
+      </div>
+      <div class="data-field">
+        <form style="margin-bottom: 32px">
+          <div>
+            <label for="id">Book ID</label>
+            <input
+              type="text"
+              id="id"
+              name="id"
+              placeholder="Insert book ID"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div></div>
+          <button type="submit" id="submit" class="primary-btn">
+            Get A Book
+          </button>
+        </form>
+        <div class="table-field">
+          <table>
+            <thead>
+              <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody id="data-body"></tbody>
+          </table>
+        </div>
+        <div id="messagearea" onclick="this.style.display = 'none'"></div>
+        <div>
+          <a href="/" class="secondary-btn">&larr;&nbsp;Back to Menu</a>
+        </div>
+      </div>
+    </div>
+    <script src="/js/getOneBookHandler.js"></script>
+  </body>
+</html>

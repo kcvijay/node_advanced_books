@@ -1,0 +1,44 @@
+{
+  "host": "127.0.0.1",
+  "port": 3306,
+  "admin": "boss",
+  "user": "emma",
+  "userpassword": "9ef21SIY",
+  "dropUser": true,
+  "debug": true,
+  "database": "bookdb",
+  "allowPublicKeyRetrieval": true,
+  "tables": [
+    {
+      "tableName": "book",
+      "columns": [
+        "id integer not null primary key",
+        "name varchar(44) not null",
+        "author varchar(15) not null",
+        "genre varchar(18) not null",
+        "type varchar(18) not null"
+      ],
+      "data": [
+        [1, "SQL-mysteries", "Felix Harris", "Chronic", "Hardcover"],
+        [2, "Databases-the rise and fall", "Matt Wilson", "Poem", "Leaflet"],
+        [
+          3,
+          "Rebellion of Sophie Q Lister",
+          "Isla Shore",
+          "Non-fiction",
+          "Softcover"
+        ],
+        [
+          4,
+          "The adventures of Mike the Millipede",
+          "Emily White",
+          "Textbook",
+          "Pocketbook"
+        ],
+        [5, "Hacking databases", "Jesse River", "Fiction", "Print-on-demand"],
+        [6, "No-SQL - New Hope", "Antony Lee", "Short-story", "Magazine"],
+        [7, "Maria and My", "Layla Jones", "Humorous essay", "E-book"]
+      ]
+    }
+  ]
+}
