@@ -48,7 +48,6 @@
       if (status.message) {
         updateMessage(status.message, status.type);
       }
-      clearMessage();
     } catch (err) {
       updateMessage(err.message, "error");
     }
@@ -65,6 +64,8 @@
       authorField.value = "";
       genreField.value = "";
       typeField.value = "";
+      messageField.textContent = "";
+      messageField.removeAttribute("class");
     }
   }
 })();

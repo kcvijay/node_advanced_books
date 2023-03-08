@@ -65,6 +65,7 @@
       authorField.value = "";
       genreField.value = "";
       typeField.value = "";
+      messageField.textContent = "";
     }
   }
 })();

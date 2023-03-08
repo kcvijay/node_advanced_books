@@ -21,14 +21,6 @@
   messageField = document.querySelector("#messagearea");
   submit = document.querySelector("#submit");
 
-  function clearFields() {
-    inputField.value = "";
-    titleField.value = "";
-    authorField.value = "";
-    genreField.value = "";
-    typeField.value = "";
-  }
-
   getDataField.addEventListener("click", (e) => {
     e.preventDefault();
     confirmBookData();
@@ -38,13 +30,20 @@
     e.preventDefault();
     if (confirm("Are you sure you want to delete this book data?")) {
       deleteBookData();
-      clearFields();
     }
   });
 
   function updateMessage(message) {
     messageField.style.display = "flex";
     messageField.innerHTML = `<p>${message}</p>`;
+  }
+
+  function clearFields() {
+    idField.value = "";
+    titleField.value = "";
+    authorField.value = "";
+    genreField.value = "";
+    typeField.value = "";
   }
 
   async function confirmBookData() {

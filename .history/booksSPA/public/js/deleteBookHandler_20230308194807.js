@@ -38,7 +38,6 @@
     e.preventDefault();
     if (confirm("Are you sure you want to delete this book data?")) {
       deleteBookData();
-      clearFields();
     }
   });
 
